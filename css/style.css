@@ -1,0 +1,805 @@
+
+@import url('https://fonts.googleapis.com/css2?family=Dosis&family=Lato:wght@300&display=swap');
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+/* body */
+body {
+    background-color: #e7ecef;
+}
+
+/* HEADER */
+
+.header {
+    background-image: url('../img/background_header.jpeg');
+    background-repeat: no-repeat;
+    background-size: cover;      
+    grid-area: header;
+    width: auto;
+}
+
+/*h1*/
+
+.background__h1 {
+    background-color: #e7ecef;
+    border-radius: 10px;
+    height: 60px;
+    width: 500px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+
+h1 {
+    font-family: lato, sans-serif;
+    font-size: 30px;
+    font-weight: 30px;
+    color: #3a0ca3;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 10px 200px;
+}
+
+
+/* NAV */
+
+nav ul {
+    list-style-type: none;  
+
+}
+
+nav ul :hover {
+    background-clip: content-box;
+}
+
+
+.navegacion {
+    font-family: lato, sans-serif;
+    font-size: 20px;
+    height: 25vh;
+    display: flex;
+    justify-content: center;
+    position: sticky;   
+    top: 0;  
+
+}
+
+.nav__links {
+    list-style-type: none;
+    display: flex;
+    justify-content: flex-end;
+    align-items:flex-end;
+
+}
+
+
+.nav__link {
+    text-decoration: none;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    margin: 0 45px 5px auto;
+    padding: 0 25px;
+    background-color: #023047;
+    border-radius: 10px;
+    border: solid 1px;
+    color: white;
+
+}
+
+
+
+/* MAIN */
+
+/*GRID AREA*/
+
+.container {
+    display: grid;
+    grid-template-areas: "header header header"
+                        "navegacion navegacion navegacion"
+                        "gridResponsive gridResponsive gridResponsive"                    
+                        "footer footer footer";
+    grid-template-rows: 40vh 60vh 60vh;
+
+}
+
+.gridResponsive {
+    width: 100%;
+    height: 100%;
+    display: grid;
+    grid-template-areas: 
+    "box-colum box-art box-news"
+    "box-colum box-art box-news"
+    "box-poetry box-video box-audio"
+    "box-poetry box-video box-audio";
+    grid-template-columns:  60vh 60vh 60vh;
+    grid-template-rows: 30vh 30vh 30vh 30vh;
+    font-family: lato, sans-serif;
+    margin-top: 50px;
+    margin-left: 25px;
+}
+
+.container__libros {
+    display: grid;
+    grid-template-areas: "header header header"
+                        "navegacion navegacion navegacion"
+                        "gridResponsive gridResponsive gridResponsive"                    
+                        "footer footer footer";
+    grid-template-rows: 40vh 120vh 70vh;
+    grid-template-columns: 70vh;
+    
+}
+
+.gridResponsive_libros {
+    width: 100%; 
+    height: 100%; 
+    display: grid;
+    grid-template-areas: 
+    "box-loquefue box-ocul box-elolv"
+    "box-angosta box-traic box-basura";
+    grid-template-columns:  60vh 60vh 60vh;
+    grid-template-rows: 650px 650px 650px 650px;
+    font-family: lato, sans-serif;
+    margin-top: 60px;
+    margin-left: 20px;
+}
+
+
+.gridResponsive__box {
+    font-family: lato, sans-serif;
+    color: #8f8f8f;
+    font-size: 30px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+
+
+
+/*ACÁ COMIENZA EL GRID DE LOS ITEMS*/
+
+
+
+.gridResponsive__box--colum {
+    background-image: url('../img/notebook.jpeg');
+    object-fit: cover;
+    color: white;
+    display: flex;
+    justify-content:space-around;
+    align-items:flex-start;
+    padding-top: 10px;
+    margin-right: 20px;
+    margin-bottom: 20px;
+    grid-area: box-colum;
+    border-radius: 10px;
+    border-radius: 10px;
+}
+
+.gridResponsive__box--art {
+    background-image: url('../img/Papers_1.jpeg');
+    color: black;
+    display: flex;
+    justify-content: space-around;
+    align-items:flex-start;
+    padding-top: 10px;
+    margin-right: 20px;
+    margin-bottom: 20px;
+    grid-area: box-art;
+    border-radius: 10px;
+    border-radius: 10px;
+}
+
+.gridResponsive__box--news {
+    background-image: url('../img/media-3.jpeg');
+    color: black;
+    display: flex;
+    justify-content: space-around;
+    align-items:flex-start;
+    padding-top: 10px;
+    margin-right: 20px;
+    margin-bottom: 20px;
+    border-radius: 10px;
+    grid-area: box-news;
+}
+
+.gridResponsive__box--poetry {
+    background-image: url('../img/barcos.jpeg');
+    color: white;
+    height: auto;
+    display: flex;
+    justify-content: space-around;
+    align-items: flex-start;
+    padding-top: 10px;
+    margin-right: 20px;
+    margin-bottom: 20px;
+    border-radius: 10px;
+    grid-area: box-poetry;
+}
+
+.gridResponsive__box--video {
+    background-image: url('../img/video_vintage.jpeg');
+    color: white;
+    height: auto;
+    display: flex;
+    justify-content: space-around;
+    align-items:flex-start;
+    padding-top: 10px;
+    margin-right: 20px;
+    margin-bottom: 20px;
+    border-radius: 10px;
+    grid-area: box-video;
+    
+}
+
+.gridResponsive__box--audio {
+    background-image: url('../img/audio_vintage.jpeg');
+    color: white;
+    display: flex;
+    height: auto;
+    justify-content: space-around;
+    align-items: flex-start;
+    padding-top: 10px;
+    margin-bottom: 20px;
+    margin-right: 20px;
+    grid-area: box-audio;
+    border-radius: 10px;
+}
+
+/*ACÁ COMIENZA EL GRID DE LOS LIBROS */
+
+.gridResponsive__box--loquefue {
+    background-image: url('../img/lo-que-fue-presente.jpeg');
+    color: white;
+    display: flex;
+    height: auto;
+    justify-content: flex-start;
+    align-items: flex-start;
+    padding-top: 10px;
+    margin-left: 10px;
+    margin-bottom: 10px;
+    grid-area: box-loquefue;
+    border-radius: 10px;
+}
+
+.gridResponsive__box--ocul {
+    background-image: url('../img/laoculta.jpeg');
+    color: white;
+    height: auto;
+    display: flex;
+    object-fit:fill;
+    justify-content: space-around;
+    align-items: flex-start;
+    padding-top: 10px;
+    margin-left: 10px;
+    margin-bottom: 10px;
+    grid-area: box-ocul;
+    border-radius: 10px;
+}
+
+.gridResponsive__box--elolv {
+    background-image: url('../img/olvido.jpeg');
+    height: auto;
+    display: flex;
+    justify-content: flex-start;
+    align-items:flex-start;
+    padding-top: 10px;
+    margin-left: 10px;
+    margin-bottom: 10px;
+    grid-area: box-elolv;
+    border-radius: 10px;
+}
+
+.gridResponsive__box--angosta {
+    background-image: url('../img/angosta.jpeg');
+    color: black;
+    display: flex;
+    justify-content: space-around;
+    align-items:flex-start;
+    padding-top: 10px;
+    margin-left: 10px;
+    margin-bottom: 10px;
+    grid-area: box-angosta;
+    border-radius: 10px;
+}
+
+.gridResponsive__box--traic {
+    background-image: url('../img/traiciones.jpeg');
+    color: white;
+    display: flex;
+    justify-content: space-around;
+    align-items:flex-start;
+    padding-top: 10px;
+    margin-left: 10px;
+    margin-bottom: 10px;
+    grid-area: box-traic;
+    border-radius: 10px;
+}
+
+
+
+.gridResponsive__box--basura {
+    background-image: url('../img/Basura.jpeg');
+    object-fit: cover;
+    color: white;
+    display: flex;
+    justify-content:space-around;
+    align-items:flex-start;
+    padding-top: 10px;
+    margin-left: 10px;
+    margin-bottom: 10px;
+    grid-area: box-basura;
+    border-radius: 10px;
+}
+
+
+
+
+/* FOOTER */
+
+.footer {
+    font-family: lato, sans-serif;
+    background-color: black;
+    color: white;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    height: 5vh;
+    margin-top: 100px;
+    width: auto;
+    grid-area: footer;
+}
+
+
+/*Media queries index*/
+
+@media screen and (max-width: 1200px) {
+
+    .container {
+        display: grid;
+        grid-template-areas: "header header"
+                            "navegacion navegacion navegacion"
+                            "gridResponsive gridResponsive gridResponsive"                    
+                            "footer footer";
+        grid-template-rows: 55vh 220vh 10vh;
+        grid-template-columns: 50vh;
+    
+    }
+    
+    .gridResponsive {
+        width: 100%;
+        height: 100vh;
+        display: grid;
+        grid-template-areas: 
+        "box-colum box-art box-news"
+        "box-colum box-art box-news"
+        "box-poetry box-video box-audio"
+        "box-poetry box-video box-audio";
+        grid-template-columns:  90vh 90vh 90vh;
+        grid-template-rows: 60vh 60vh 60vh 60vh;
+        font-family: lato, sans-serif;
+        margin-top: 15vh;
+        margin-left: 5vh;
+    
+    }   
+    
+    .header {
+        width: auto;
+    }
+
+
+    .navegacion {
+        font-family: lato, sans-serif;
+        font-size: 20px;
+        height: 20vh;
+        display: flex;
+        justify-content: center;
+        position: sticky;
+    }
+
+    .nav__link {
+        text-decoration: none;
+        display: flex;
+        justify-content: space-around;
+        align-items: center;
+        margin: 0 35px 5px auto;
+        padding: 0 15px;
+        background-color: #023047;
+        border-radius: 10px;
+        border: solid 1px;
+        color: white;
+    
+    }
+
+    
+}
+
+
+@media screen and (max-width: 980px) {
+
+    .container {
+        display: grid;
+        grid-template-areas: "header header"
+                            "navegacion navegacion"
+                            "gridResponsive gridResponsive"                    
+                            "footer footer";
+        grid-template-rows: 40vh 220vh 15vh;
+        grid-template-columns: 80vh;
+    
+    }
+    
+    .gridResponsive {
+        width: 100%;
+        height: 100vh;
+        display: grid;
+        grid-template-areas: 
+        "box-colum box-art box poetry"
+        "box-news box-video box-audio";
+        grid-template-columns: 80vh 80vh 80vh;
+        grid-template-rows: 60vh 60vh 60vh 60vh;
+        font-family: lato, sans-serif;
+        margin-top: 50px;
+        margin-left: 5px;
+    }   
+
+   .gridResponsive__box--colum {
+
+        margin-left: 10px;
+        margin-right: 5px;
+
+   }
+
+   .gridResponsive__box--art {
+
+        margin-left: 10px;
+        margin-right: 5px;
+
+   }
+
+   .gridResponsive__box--poetry {
+
+        margin-left: 10px;
+        margin-right: 5px;
+
+   }
+
+   .gridResponsive__box--news {
+
+        margin-left: 10px;
+        margin-right: 5px;
+
+   }
+
+   .gridResponsive__box--video {
+
+        margin-left:10px;
+        margin-right: 5px;
+
+   }
+
+   .gridResponsive__box--audio {
+
+        margin-left: 10px;
+        margin-right: 5px;
+   }
+
+    .header {
+        width: auto;
+    }
+
+    .background__h1 {
+        background-color: #e7ecef;
+        border-radius: 10px;
+        height: 10vh ;
+        display: flex;
+        justify-content: center;
+        align-items: space-around  ;
+        margin-left: 10px;
+    }
+
+
+    .navegacion {
+        font-family: lato, sans-serif;
+        font-size: 20px;
+        height: 20vh;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        position: sticky;
+    }
+
+    .nav__link {
+        text-decoration: none;
+        display: flex;
+        justify-content: space-around;
+        align-items: center;
+        margin: 0 10px 10px;
+        padding: 0 3px;
+        background-color: #023047;
+        border-radius: 10px;
+        border: solid 1px;
+        color: white;
+
+    }
+    
+}
+
+
+@media screen and (max-width: 576px) {
+
+    .container {
+        display: grid;
+        grid-template-areas: "header"
+                            "navegacion"
+                            "gridResponsive"                    
+                            "footer footer";
+        grid-template-rows: 45vh 280vh 10vh;
+        grid-template-columns: 60vh;
+    
+    }
+    
+    .gridResponsive {
+        width: 70%;
+        height: 100vh;
+        display: grid;
+        grid-template-areas: 
+        "box-colum box-art"
+        "box-news box-poetry"
+        "box-video box-audio";
+        grid-template-columns: 75vh 75vh 75vh;
+        grid-template-rows: 90vh 90vh 90vh 90vh;
+        font-family: lato, sans-serif;
+        margin-top: 50px;
+        margin-left: 0px;
+    
+    }   
+
+    .gridResponsive__box--colum {
+        margin-left: 10px;
+    }
+    .gridResponsive__box--art {
+        margin-left: 10px;
+    }
+
+    .gridResponsive__box--poetry {
+        margin-left: 10px;
+    }
+
+    .gridResponsive__box--news {
+        margin-left: 10px;
+    }
+
+    .gridResponsive__box--video {
+        margin-left: 10px;
+    }
+
+    .gridResponsive__box--audio {
+        margin-left: 10px;
+    }
+
+    
+    .header {
+        background-image: url('../img/back_type_576.jpeg');
+        width: 600px;
+
+        
+    }
+
+    .background__h1 {
+        background-color: #e7ecef;
+        border-radius: 10px;
+        height: 20px;
+        width: 300px;
+        padding: 15px;
+        display: flex;
+        justify-content: left;
+        align-items: center;
+    }
+
+    h1 {
+        font-family: lato, sans-serif;
+        font-size: 20px;
+        font-weight: 10px;
+        color: #3a0ca3;
+        display: flex;
+        justify-content: left;
+        align-items: center;
+        
+    }
+
+    .navegacion {
+        font-family: lato, sans-serif;
+        font-size: 18px;
+        height: 25vh;
+        display: flex;
+        justify-content: center;
+        position: sticky;   
+    
+    }
+    
+    .nav__links {
+        list-style-type: none;
+        display: flex;
+        justify-content: center;
+        align-items:left;
+    
+    }
+    
+    
+    .nav__link {
+        text-decoration: none;
+        display: flex;
+        justify-content: left;
+        align-items: left;
+        margin: 0 2px 2px;
+        padding: 0 3px;
+        background-color: #023047;
+        border-radius: 10px;
+        border: solid 1px;
+        color: white;
+    
+    }
+    
+}
+
+
+/*Media querie de libros */
+
+@media screen and (max-width: 1200px) {
+
+    .container__libros {
+        display: grid;
+        grid-template-areas: "header header header"
+                            "navegacion navegacion navegacion"
+                            "gridResponsive gridResponsive gridResponsive"                    
+                            "footer footer footer";
+        grid-template-rows: 50vh 230vh 140vh;
+        
+    }
+    
+    .gridResponsive_libros {
+        width: 100%; 
+        height: 100%; 
+        display: grid;
+        grid-template-areas: 
+        "box-loquefue box-ocul box-elolv"
+        "box-angosta box-traic box-basura";
+        grid-template-columns:  105vh 105vh 105vh;
+        grid-template-rows: 180vh 180vh 180vh 180vh;
+        font-family: lato, sans-serif;
+        margin-top: 50px;
+        margin-left: 5px;
+    }
+
+
+}
+   
+@media screen and (max-width: 980px) {
+
+.container__libros {
+    display: grid;
+    grid-template-areas: "header header"
+                            "navegacion navegacion"
+                            "gridResponsive gridResponsive"                   
+                            "footer footer";
+    grid-template-rows: 45vh 400vh 150vh;
+        
+    }
+    
+.gridResponsive_libros {
+        width: 100%; 
+        height: 100%; 
+        display: grid;
+        grid-template-areas: 
+        "box-loquefue box-ocul" 
+        "box-elolv box-angosta"
+        "box-traic box-basura";
+        grid-template-columns:  120vh 120vh;
+        grid-template-rows: 180vh 180vh 180vh 180vh 180vh;
+        font-family: lato, sans-serif;
+        margin-top: 50px;
+        margin-left: 30px;
+    }
+
+
+}
+
+@media screen and (max-width: 576px) {
+
+    .container__libros {
+        display: grid;
+        grid-template-areas: "header header"
+                            "navegacion navegacion"
+                            "gridResponsive gridResponsive"                   
+                            "footer footer";
+        grid-template-rows: 45vh 750vh 150vh;
+        
+    }
+    
+    .gridResponsive_libros {
+        width: 100%; 
+        height: 100%; 
+        display: grid;
+        grid-template-areas: 
+        "box-loquefue" 
+        "box-ocul" 
+        "box-elolv" 
+        "box-angosta"
+        "box-traic" 
+        "box-basura";
+        grid-template-columns:  110vh 110vh;
+        grid-template-rows: 150vh 150vh 150vh 150vh 150vh 150vh;
+        font-family: lato, sans-serif;
+        margin-top: 20px;
+        margin-left: 50px;
+    }
+
+    .header {
+        background-image: url('../img/back_type_576.jpeg');
+        width: 580px;
+
+        
+    }
+
+    .background__h1 {
+        background-color: #e7ecef;
+        border-radius: 10px;
+        height: 20px;
+        width: 300px;
+        padding: 15px;
+        display: flex;
+        justify-content: left;
+        align-items: center;
+    }
+
+    h1 {
+        font-family: lato, sans-serif;
+        font-size: 20px;
+        font-weight: 10px;
+        color: #3a0ca3;
+        display: flex;
+        justify-content: left;
+        align-items: center;
+        
+    }
+
+    .navegacion {
+        font-family: lato, sans-serif;
+        font-size: 18px;
+        height: 25vh;
+        display: flex;
+        justify-content: center;
+        position: sticky;   
+    
+    }
+    
+    .nav__links {
+        list-style-type: none;
+        display: flex;
+        justify-content: center;
+        align-items:left;
+    
+    }
+    
+    
+    .nav__link {
+        text-decoration: none;
+        display: flex;
+        justify-content: left;
+        align-items: left;
+        margin: 0 2px 2px;
+        padding: 0 3px;
+        background-color: #023047;
+        border-radius: 10px;
+        border: solid 1px;
+        color: white;
+    
+    }
+
+
+}
