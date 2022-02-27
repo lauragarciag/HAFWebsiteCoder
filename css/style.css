@@ -366,7 +366,7 @@ nav ul :hover {
                             "navegacion navegacion navegacion"
                             "gridResponsive gridResponsive gridResponsive"                    
                             "footer footer";
-        grid-template-rows: 55vh 220vh 10vh;
+        grid-template-rows: 55vh 300vh 10vh;
         grid-template-columns: 50vh;
     
     }
@@ -380,8 +380,8 @@ nav ul :hover {
         "box-colum box-art box-news"
         "box-poetry box-video box-audio"
         "box-poetry box-video box-audio";
-        grid-template-columns:  90vh 90vh 90vh;
-        grid-template-rows: 60vh 60vh 60vh 60vh;
+        grid-template-columns:  140vh 140vh 140vh;
+        grid-template-rows: 80vh 80vh 80vh 80vh;
         font-family: lato, sans-serif;
         margin-top: 15vh;
         margin-left: 5vh;
@@ -428,8 +428,8 @@ nav ul :hover {
                             "navegacion navegacion"
                             "gridResponsive gridResponsive"                    
                             "footer footer";
-        grid-template-rows: 40vh 220vh 15vh;
-        grid-template-columns: 80vh;
+        grid-template-rows: 40vh 300vh 15vh;
+        grid-template-columns: 90vh;
     
     }
     
@@ -440,8 +440,8 @@ nav ul :hover {
         grid-template-areas: 
         "box-colum box-art box poetry"
         "box-news box-video box-audio";
-        grid-template-columns: 80vh 80vh 80vh;
-        grid-template-rows: 60vh 60vh 60vh 60vh;
+        grid-template-columns: 115vh 115vh 115vh;
+        grid-template-rows: 80vh 80vh 80vh 80vh;
         font-family: lato, sans-serif;
         margin-top: 50px;
         margin-left: 5px;
@@ -538,7 +538,7 @@ nav ul :hover {
                             "navegacion"
                             "gridResponsive"                    
                             "footer footer";
-        grid-template-rows: 45vh 280vh 10vh;
+        grid-template-rows: 45vh 320vh 10vh;
         grid-template-columns: 60vh;
     
     }
@@ -551,8 +551,8 @@ nav ul :hover {
         "box-colum box-art"
         "box-news box-poetry"
         "box-video box-audio";
-        grid-template-columns: 75vh 75vh 75vh;
-        grid-template-rows: 90vh 90vh 90vh 90vh;
+        grid-template-columns: 100vh 100vh;
+        grid-template-rows: 110vh 110vh 110vh 110vh;
         font-family: lato, sans-serif;
         margin-top: 50px;
         margin-left: 0px;
